@@ -1,0 +1,33 @@
+:root{
+    --primary-color:#17202A;
+    --secondary-color:#D35400;
+    --tertiary-color:#2ECC71;
+    --dark-color:#000;
+    --dark-color_transp:#000000b4;
+    --light-color:#fff;
+    --primary-font_color:#17202A;
+    --secondary-font_color:#D35400;
+    --tertiary-font_color:#2ECC71;
+    --dark-font_color:#000;
+    --dark-font_transp:#000000b4;
+    --light-font_color:#fff;
+    --transition:1s;
+    --padding:1rem;
+    --margin:1rem;
+    --gap:1rem;
+    --spacing-size:1rem;
+    --font-size:1rem;
+    --font-family:'Montserrat', sans-serif;;
+    --border:1rem;
+    --border-radius:1rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+}

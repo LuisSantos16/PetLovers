@@ -1,5 +1,4 @@
 //menu
-
 function llamar() {
     let menu = document.getElementById("navbarid");
     let icono = document.getElementById("IconId");
@@ -14,3 +13,20 @@ function llamar() {
         icono.querySelector("i").classList.add("fa-bars-staggered");
     }
 }
+
+//scroll
+window.addEventListener("scroll",Scroll);
+function Scroll(){
+    let MenuNavbar=document.getElementById("MenuNavbar");
+    let posy=window.pageYOffset;
+    if (posy>100){
+        MenuNavbar.style.position="fixed"
+        MenuNavbar.style.width="100%"
+        MenuNavbar.style.top="0"
+    }
+    else{
+        
+    }
+}
+
+

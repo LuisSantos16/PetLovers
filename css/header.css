@@ -61,16 +61,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            min-height: 80px;
+            overflow: hidden;
             & .navbar{
                 display: flex;
+                min-height: 100%;
                 & a{
                     color: var(--light-font_color);
                     text-decoration: none;
-                    padding: calc(var(--padding) * 1.25);
+                    padding: 30px;
                     font-weight: bold;
                     &:hover{
                         background-color: var(--secondary-font_color);
-                        color: var(--primary-font_color);
+                        color: var(--primary-font_color);  
                     }
                 }   
             }
@@ -125,7 +128,7 @@
                 & .navbar{
                     position: relative;
                     opacity: 0;
-                    left: 0;
+                    left: 120%;
                     transition: var(--transition);
                     display: flex;
                     flex-direction: column;
@@ -137,7 +140,7 @@
                 #navbarid{
                     position: absolute;
                     background-color: var(--secondary-color);
-                    transform: translatey(56%);
+                    transform: translatey(58%);
                     width: 100%;
                     & a{
                         &:hover{

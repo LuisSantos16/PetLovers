@@ -25,7 +25,7 @@ function Scroll(){
         MenuNavbar.style.top="0"
     }
     else{
-        
+        MenuNavbar.style.position="relative"
     }
 }
 

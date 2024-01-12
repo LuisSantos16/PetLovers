@@ -82,7 +82,7 @@
                 font-weight: bold;
                 &:hover{
                     background-color: var(--secondary-font_color);
-                    color: var(--primary-font_color);
+                    color: var(--secondary-font_color);
                 }
             }
         }
@@ -132,12 +132,12 @@
                 #navbarid{
                     position: absolute;
                     background-color: var(--secondary-color);
-                    top: 127;
+                    top: 138;
                     width: 100%;
                     & a{
                         &:hover{
                             background-color: var(--primary-color);
-                            color: var(--tertiary-font_color);
+                            color: var(--secondary-font_color);
                         }
                     }  
                 }

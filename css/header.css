@@ -151,6 +151,9 @@
         & .second-conta_header{
             & .second-cont_header{
                 & ul{
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: calc(var(--gap) / 1.6);
                     & li{
                         font-size: calc(var(--font-size) / 1.6);
                     }

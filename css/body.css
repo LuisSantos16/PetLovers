@@ -3,15 +3,14 @@
     --secondary-color:#D35400;
     --tertiary-color:#27AE60;
     --dark-color:#000;
-    --dark-color_transp:#000000b4;
+    --dark-color_transp:#000000b7;
     --light-color:#fff;
     --primary-font_color:#17202A;
     --secondary-font_color:#D35400;
     --tertiary-font_color:#27AE60;
     --dark-font_color:#000;
-    --dark-font_transp:#000000b4;
     --light-font_color:#fff;
-    --transition:.5s;
+    --transition: .5s;
     --padding:1rem;
     --margin:1rem;
     --gap:1rem;

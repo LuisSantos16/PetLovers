@@ -118,6 +118,7 @@
                     color: var(--secondary-font_color);
                     font-size: calc(var(--font-size) * 1.25);
                     float: right;
+                    cursor: pointer;
                 }
                 & .navbar{
                     position: relative;
@@ -164,6 +165,9 @@
             & .conta_navbar{
                 & .logo{
                     font-size: var(--font-size);
+                }
+                #navbarid{
+                    top: 128;
                 }
             } 
         }

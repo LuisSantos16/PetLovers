@@ -1,8 +1,5 @@
 
 .container-header{
-    & .disable-pc{
-        display: none;
-    }
     & .first-conta_header{
         background-color: var(--tertiary-color);
         & .first-cont_header{
@@ -93,19 +90,17 @@
 }
 
 @media(width<=1250px){
-    
     .container-header{
         & .first-conta_header{
             & .first-cont_header{
                 justify-content: center;
-                & .header_question{
-                    display: none;
-                }
             }
         }
         & .second-conta_header{
-            & .disable-movil{
-                display: none;
+            & .second-cont_header{
+                display: grid;
+                place-content: center;
+                min-height: 40px;
             }
         }
         & .container_navbar{
@@ -119,12 +114,12 @@
                     }
                 }
                 & .containar_icon-bar{
+                    display: block;
                     color: var(--secondary-font_color);
                     font-size: calc(var(--font-size) * 1.25);
                     float: right;
                 }
                 & .navbar{
-                    display: none;
                     position: relative;
                     left: -120%;
                     transition: var(--transition);
@@ -137,23 +132,37 @@
                 #navbarid{
                     position: absolute;
                     background-color: var(--secondary-color);
-                    top: 99;
+                    top: 127;
                     width: 100%;
                     & a{
                         &:hover{
-                            background-color: var(--dark-color);
+                            background-color: var(--primary-color);
                             color: var(--tertiary-font_color);
                         }
                     }  
                 }
             }
-            & .disable-movil{
-                display: none;
-            }
-            & .activate-movil{
-                display: block;
-            }
         }
     }
+}
 
+@media(width<=650px){
+    .container-header{
+        & .second-conta_header{
+            & .second-cont_header{
+                & ul{
+                    & li{
+                        font-size: calc(var(--font-size) / 1.6);
+                    }
+                } 
+            }
+        }
+        & .container_navbar{
+            & .conta_navbar{
+                & .logo{
+                    font-size: var(--font-size);
+                }
+            } 
+        }
+    }
 }

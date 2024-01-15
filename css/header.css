@@ -61,8 +61,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
-            
             & .navbar{
                 display: flex;
                 & a{
@@ -175,6 +173,9 @@
             & .conta_navbar{
                 & .logo{
                     font-size: var(--font-size);
+                }
+                #navbarid{
+                    
                 }
             } 
         }

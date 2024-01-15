@@ -1,46 +1,44 @@
 
 main{
     padding: calc(var(--padding) * 3.125) 0;
+    display: grid;
+    gap: 150px;
 }
 
-.container-reservation{
-    & .conta-reservation{
+.container_reservation{
+    & .conta_reservation{
         max-width: 1250px;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
         gap: calc(var(--gap) * 1.25);
         justify-content: space-around;
-        & .container-formulario{
+        & form{
             padding: calc(var(--padding) * 5) calc(var(--padding) * 3.125);
             width: 500px;
             background-color: var(--tertiary-color);
             display: grid;
-            align-items: center;
-            & form{
-                display: grid;
-                flex-direction: column;
-                gap: var(--gap);
-                & input,select,option{
-                    border: 0;
-                    padding: calc(var(--padding) / 1.6);
-                    font-family: inherit;
-                    font-weight: bolder;
-                    outline: none;
-                }
-                & input[type="submit"]{
-                    background-color: var(--dark-color);
-                    color: var(--light-font_color);
-                    cursor: pointer;
-                    transition: var(--transition);
-                    padding: calc(var(--padding) * 1.25) 0;
-                    &:hover{
-                        background-color: var(--primary-color);
-                    }
+            gap: var(--gap);
+            & input,select,option{
+                border: 0;
+                padding: calc(var(--padding) / 1.6);
+                font-family: inherit;
+                font-weight: bolder;
+                outline: none;
+            }
+            & input[type="submit"]{
+                background-color: var(--dark-color);
+                color: var(--light-font_color);
+                cursor: pointer;
+                transition: var(--transition);
+                padding: calc(var(--padding) * 1.25) 0;
+                &:hover{
+                    background-color: var(--primary-color);
                 }
             }
         }
-        & .info-reservation{
+
+        & .info_reservation{
             width: 700px;
             display: grid;
             place-content: center;
@@ -55,7 +53,7 @@ main{
                     color: var(--secondary-font_color);
                 }
             }
-            & .conta-services{
+            & .conta_services{
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -64,16 +62,49 @@ main{
                     width: 300px;
                     display: grid;
                     gap: var(--gap);
-                    & .service-title{
+                    & .service_title{
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         gap: calc(var(--gap) / 1.6);
-                        & .icon-service{
+                        & .icon_service{
                             color: var(--secondary-font_color);
                             font-size: calc(var(--font-size) * 2.25);
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+
+.container_AboutUs{
+    background-color: var(--quaternary-color);
+    & .conta_AboutUs{
+        max-width: 1250px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc(var(--gap) * 1.25);
+        & .conten_AboutUs{
+            width: 800px;
+        }
+        & .img_About{
+            display: grid;
+            place-content: center;
+            width: 400px;
+            & .img_col{
+                & img{
+                    width: 100%;
+                }
+            }
+            & .img_row{
+                display: flex;
+                width: 200px;
+                & img{
+                    width: 100%;
+                    display: block;
                 }
             }
         }

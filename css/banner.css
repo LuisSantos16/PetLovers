@@ -24,17 +24,6 @@
             justify-content: center;
             gap: calc(var(--gap) * 1.25);
             & .first-button{
-                background-color: var(--secondary-color);
-                color: var(--light-font_color);
-                padding: calc(var(--padding) / 1.6) calc(var(--padding) * 2);
-                border-radius: calc(var(--border-radius) / 1.6);
-                text-decoration: none;
-                transition: var(--transition);
-                &:hover{
-                    background-color: var(--primary-color);
-                }
-            }
-            & .second-button{
                 background-color: var(--tertiary-color);
                 color: var(--dark-font_color);
                 padding: calc(var(--padding) / 1.6) calc(var(--padding) * 2);
@@ -44,6 +33,18 @@
                 &:hover{
                     background-color: var(--primary-color);
                     color: var(--light-font_color);
+                }
+            }
+            & .second-button{
+
+                background-color: var(--secondary-color);
+                color: var(--light-font_color);
+                padding: calc(var(--padding) / 1.6) calc(var(--padding) * 2);
+                border-radius: calc(var(--border-radius) / 1.6);
+                text-decoration: none;
+                transition: var(--transition);
+                &:hover{
+                    background-color: var(--primary-color);
                 }
             }
         }

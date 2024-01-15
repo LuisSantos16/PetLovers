@@ -18,15 +18,19 @@ function llamar() {
 window.addEventListener("scroll",Scroll);
 function Scroll(){
     let MenuNavbar=document.getElementById("MenuNavbar");
+    let SecondHeader=document.getElementById("SecondHeader");
     let posy=window.pageYOffset;
     if (posy>50){
         MenuNavbar.style.position="fixed"
         MenuNavbar.style.width="100%"
         MenuNavbar.style.top="0"
+        SecondHeader.style.display="none"
     }
     else{
         MenuNavbar.style.position="relative"
+        SecondHeader.style.display="block"
     }
+
 }
 
 

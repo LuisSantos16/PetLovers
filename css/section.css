@@ -80,6 +80,7 @@ main{
 
 .container_AboutUs{
     background-color: var(--quaternary-color);
+    padding: calc(var(--padding) * 2.5) 0;
     & .conta_AboutUs{
         max-width: 1250px;
         margin: auto;
@@ -103,6 +104,16 @@ main{
                 & li::marker{
                     content: "✔️";
                 }
+            }
+            & a{
+                text-decoration: none;
+                text-align: center;
+                color: var(--light-font_color);
+                background-color: var(--secondary-color);
+                width: 200px;
+                margin: auto;
+                padding: calc(var(--padding) / 1.6);
+                border-radius: var(--border-radius);
             }
         }
         & .img_About{

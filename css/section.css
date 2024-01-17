@@ -147,19 +147,19 @@ main{
             font-size: calc(var(--font-size) * 2.5);
         }
         & .function{
-            border: 1px solid black;
+            background-color: var(--quaternary-color);
             width: 350px;
             display: grid;
             gap: calc(var(--gap) * 1.25);
             text-align: center;
-            padding: var(--padding);
+            padding: calc(var(--padding) * 2.5);
             & .icon_function{
                 font-size: calc(var(--font-size) * 3.125);
                 color: var(--tertiary-font_color);
             }
             & h3{
                 font-size: calc(var(--font-size) * 1.5);
-                font-weight: bold;
+                font-weight: bold !important;
             }
             & p{
                 font-size: calc(var(--font-size) * 0.94);
@@ -169,6 +169,48 @@ main{
                 text-decoration: none;
                 color: var(--secondary-font_color);
                 font-weight: bold;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media(width<=1250px){
+
+    .container_reservation{
+        & .conta_reservation{
+            justify-content: space-around;
+            & form{
+                width: 400px;
+            }
+            & .info_reservation{
+                width: 600px;
+                
+                & .conta_services{
+                    
+                    width: 100%;
+                    justify-content: space-around;
+                    & .service{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    .container_AboutUs{
+        & .conta_AboutUs{
+            justify-content: space-around;
+            & .conten_AboutUs{
+                width: 500px;
+            }
+            & .img_About{
+                width: 400px;
+                & .img_row{
+                    width: 200px;
+                }
             }
         }
     }

@@ -2,10 +2,11 @@
 main{
     padding: calc(var(--padding) * 3.125) 0;
     display: grid;
-    gap: 150px;
+    gap: calc(var(--gap) * 8.75);
 }
 
 .container_reservation{
+    background-color: var(--quaternary-color);
     & .conta_reservation{
         max-width: 1250px;
         margin: auto;
@@ -79,7 +80,6 @@ main{
 
 
 .container_AboutUs{
-    background-color: var(--quaternary-color);
     & .conta_AboutUs{
         max-width: 1250px;
         margin: auto;
@@ -91,7 +91,7 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 20px;
+            gap: calc(var(--gap) * 1.25);
             & h4{
                 color: var(--tertiary-font_color);
                 font-size: calc(var(--font-size) * 1.25);

@@ -6,7 +6,6 @@ main{
 }
 
 .container_reservation{
-    background-color: var(--quaternary-color);
     & .conta_reservation{
         max-width: 1250px;
         margin: auto;
@@ -80,6 +79,7 @@ main{
 
 
 .container_AboutUs{
+    background-color: var(--quaternary-color);
     & .conta_AboutUs{
         max-width: 1250px;
         margin: auto;
@@ -121,6 +121,54 @@ main{
                     width: 100%;
                     display: block;
                 }
+            }
+        }
+    }
+}
+
+.container_functions{
+    max-width: 1250px;
+    margin: auto;
+    & .conta_functions{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: calc(var(--gap) * 1.25);
+        & h4{
+            width: 100%;
+            text-align: center;
+            color: var(--tertiary-font_color);
+            font-size: calc(var(--font-size) * 1.25);
+        }
+        & h2{
+            width: 100%;
+            text-align: center;
+            color: var(--secondary-font_color);
+            font-size: calc(var(--font-size) * 2.5);
+        }
+        & .function{
+            border: 1px solid black;
+            width: 350px;
+            display: grid;
+            gap: calc(var(--gap) * 1.25);
+            text-align: center;
+            padding: var(--padding);
+            & .icon_function{
+                font-size: calc(var(--font-size) * 3.125);
+                color: var(--tertiary-font_color);
+            }
+            & h3{
+                font-size: calc(var(--font-size) * 1.5);
+                font-weight: bold;
+            }
+            & p{
+                font-size: calc(var(--font-size) * 0.94);
+                line-height: calc(var(--spacing-size) * 1.5);
+            }
+            & a{
+                text-decoration: none;
+                color: var(--secondary-font_color);
+                font-weight: bold;
             }
         }
     }

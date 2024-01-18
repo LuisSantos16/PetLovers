@@ -164,13 +164,15 @@ main{
             gap: calc(var(--gap) * 1.25);
             text-align: center;
             padding: calc(var(--padding) * 2.5);
+            @media(width<=1090px){
+                width: 450px;
+            }
             & .icon_function{
                 font-size: calc(var(--font-size) * 3.125);
                 color: var(--tertiary-font_color);
             }
             & h3{
                 font-size: calc(var(--font-size) * 1.5);
-                font-weight: bold !important;
             }
             & p{
                 font-size: calc(var(--font-size) * 0.94);
@@ -198,9 +200,7 @@ main{
             }
             & .info_reservation{
                 width: 600px;
-                
                 & .conta_services{
-                    
                     width: 100%;
                     justify-content: space-around;
                     & .service{
@@ -226,3 +226,6 @@ main{
         }
     }
 }
+
+
+@media(width<=1020px){}

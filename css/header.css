@@ -66,8 +66,9 @@
                 & a{
                     color: var(--light-font_color);
                     text-decoration: none;
-                    padding: 20px;
+                    padding: calc(var(--padding) * 1.25);
                     font-weight: bold;
+                    transition: var(--transition);
                     &:hover{
                         background-color: var(--secondary-font_color);
                         color: var(--primary-font_color);  

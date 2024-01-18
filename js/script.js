@@ -20,7 +20,7 @@ function Scroll(){
     let MenuNavbar=document.getElementById("MenuNavbar");
     let SecondHeader=document.getElementById("SecondHeader");
     let posy=window.pageYOffset;
-    if (posy>50){
+    if (posy>150){
         MenuNavbar.style.position="fixed"
         MenuNavbar.style.width="100%"
         MenuNavbar.style.top="0"

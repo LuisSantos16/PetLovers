@@ -30,7 +30,12 @@ function Scroll(){
         MenuNavbar.style.position="relative"
         SecondHeader.style.display="block"
     }
+}
 
+var dtt = document.getElementById('placholder_reservation')
+dtt.onfocus = function (event) {
+    this.type = 'datetime-local';
+    this.focus();
 }
 
 

@@ -24,6 +24,7 @@ main{
                 font-family: inherit;
                 font-weight: bolder;
                 outline: none;
+                width: 100%;
             }
             & input[type="submit"]{
                 background-color: var(--dark-color);
@@ -335,7 +336,7 @@ main{
             & h2{font-size: calc(var(--font-size) * 1.5);}
             & .function{
                 width: 95%;
-                padding: 10px;
+                padding: calc(var(--padding) * 1.25) calc(var(--padding) / 1.6);
                 & .icon_function{
                     font-size: calc(var(--font-size) * 1.625);
                 }

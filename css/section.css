@@ -61,6 +61,7 @@ main{
                     width: 300px;
                     display: grid;
                     gap: var(--gap);
+                    line-height: calc(var(--spacing-size) * 1.5);
                     & .service_title{
                         display: flex;
                         align-items: center;
@@ -76,7 +77,6 @@ main{
         }
     }
 }
-
 
 .container_AboutUs{
     background-color: var(--quaternary-color);
@@ -100,9 +100,17 @@ main{
             & h2{
                 font-size: calc(var(--font-size) * 2.5);
             }
+            & p,span{
+                line-height: calc(var(--spacing-size) * 1.5);
+            }
             & ul{
-                & li::marker{
-                    content: "✔️";
+                text-align: left;
+                line-height: calc(var(--spacing-size) * 1.75);
+                & li{
+                    padding: 0 calc(var(--padding) / 4);
+                    &::marker{
+                        content: "✔️";
+                    }
                 }
             }
             & a{
@@ -111,7 +119,6 @@ main{
                 color: var(--light-font_color);
                 background-color: var(--secondary-color);
                 width: 200px;
-                margin: auto;
                 padding: calc(var(--padding) / 1.6);
                 border-radius: var(--border-radius);
             }
@@ -166,6 +173,9 @@ main{
             padding: calc(var(--padding) * 2.5);
             @media(width<=1090px){
                 width: 450px;
+            }
+            @media(width<=920px){
+                width: 80%;
             }
             & .icon_function{
                 font-size: calc(var(--font-size) * 3.125);
@@ -228,4 +238,49 @@ main{
 }
 
 
-@media(width<=1020px){}
+@media(width<=1030px){
+
+    .container_reservation{
+        & .conta_reservation{
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: calc(var(--gap) * 3.25);
+            & .info_reservation{
+                width: 100%;
+                text-align: center;
+                & .conta_services{
+                    justify-content: center;
+                    & .service{
+                        width: 360px;
+                    }
+                }
+            }
+            & form{
+                width: 70%;
+            }
+        }
+    }
+
+    .container_AboutUs{
+        & .conta_AboutUs{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: calc(var(--gap) * 3.25);
+            & .conten_AboutUs{
+                text-align: center;
+                width: 70%;
+            }
+            & .img_About{
+                width: 90%;
+                & .img_row{
+                    width: 100%;
+                    & img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

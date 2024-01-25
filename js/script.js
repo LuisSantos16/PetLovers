@@ -32,10 +32,3 @@ function Scroll(){
     }
 }
 
-var dtt = document.getElementById('placholder_reservation')
-dtt.onfocus = function (event) {
-    this.type = 'datetime-local';
-    this.focus();
-}
-
-

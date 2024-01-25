@@ -26,15 +26,6 @@ main{
                 outline: none;
                 width: 100%;
             }
-            & .placeholder
-            {
-              color: gray;
-            }
-            
-            & .focused
-            {
-              color: black;
-            }
             & input[type="submit"]{
                 background-color: var(--dark-color);
                 color: var(--light-font_color);

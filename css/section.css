@@ -1,9 +1,4 @@
 
-main{
-    padding: calc(var(--padding) * 3.125) 0;
-    display: grid;
-    gap: calc(var(--gap) * 8.75);
-}
 
 .container_reservation{
     & .conta_reservation{
@@ -174,6 +169,9 @@ main{
             gap: calc(var(--gap) * 1.25);
             text-align: center;
             padding: calc(var(--padding) * 2.5);
+            & .icon_function{
+                pointer-events: none;
+            }
             @media(width<=1090px){
                 width: 450px;
             }
@@ -280,10 +278,6 @@ main{
 }
 
 @media(width<=650px){
-
-    main{
-        gap: calc(var(--gap) * 1.25);
-    }
 
     .container_reservation{
         .conta_reservation{

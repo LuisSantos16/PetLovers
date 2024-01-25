@@ -32,6 +32,12 @@ body{
     font-family: var(--font-family);
 }
 
+main{
+    padding: calc(var(--padding) * 3.125) 0;
+    display: grid;
+    gap: calc(var(--gap) * 8.75);
+}
+
 .disable-pc{
     display: none;
 }
@@ -42,5 +48,12 @@ body{
     }
     .activate-movil{
         display: block;
+    }
+}
+
+@media(width<=650px){
+
+    main{
+        gap: calc(var(--gap) * 1.25);
     }
 }

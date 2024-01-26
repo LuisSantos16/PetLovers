@@ -42,6 +42,18 @@ main{
     display: none;
 }
 
+.color-primary{
+    color: var(--primary-font_color);
+}
+
+.color-secondary{
+    color: var(--secondary-font_color);
+}
+
+.color-tertiary{
+    color: var(--tertiary-font_color);
+}
+
 @media(width<=1250px){
     .disable-movil{
         display: none;

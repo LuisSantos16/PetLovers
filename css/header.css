@@ -35,9 +35,6 @@
             padding: 0 calc(var(--padding) * 1.25);
             & .logo{
                 font-size: calc(var(--font-size) * 1.25);
-                & span{
-                    color: var(--secondary-font_color);
-                }
             }
             & ul{
                 display: flex;
@@ -117,9 +114,6 @@
                 & .logo{
                     font-size: calc(var(--font-size) * 1.25);
                     color: var(--light-font_color);
-                    & span{
-                        color: var(--secondary-font_color);
-                    }
                 }
                 & .containar_icon-bar{
                     display: block;
@@ -175,9 +169,6 @@
             & .conta_navbar{
                 & .logo{
                     font-size: var(--font-size);
-                }
-                #navbarid{
-                    
                 }
             } 
         }

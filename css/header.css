@@ -55,6 +55,7 @@
 
     & .container_navbar{
         background-color: var(--primary-color);
+        z-index: 99999;
         & .conta_navbar{
             max-width: 1250px;
             margin: auto;

@@ -32,3 +32,41 @@ function Scroll(){
     }
 }
 
+//testimonios
+let testimonialIndex = 0;
+const intervalDuration = 4000;
+const TestimonialsPerson = document.getElementById("person_testimonials");
+const testimonialButtons = document.getElementById("testimonial-buttons");
+
+function moveTestimonial(index) {
+    testimonialIndex = (index + TestimonialsPerson.children.length) % TestimonialsPerson.children.length;
+    const offset = -testimonialIndex * 100;
+    TestimonialsPerson.style.transform = `translateX(${offset}%)`;
+    updateButtons();
+}
+
+function startCarousel() {
+    setInterval(() => {
+        moveTestimonial(testimonialIndex + 1);
+    }, intervalDuration);
+}
+
+function createButtons() {
+    Array.from(TestimonialsPerson.children).forEach((testimonial, index) => {
+        const button = document.createElement("button");
+        button.classList.add("testimonial-button");
+        button.addEventListener("click", () => moveTestimonial(index));
+        testimonialButtons.appendChild(button);
+    });
+}
+
+function updateButtons() {
+    const activeButton = document.querySelector(".testimonial-button.active");
+    if (activeButton) activeButton.classList.remove("active");
+    testimonialButtons.children[testimonialIndex].classList.add("active");
+}
+
+window.onload = function() {
+    startCarousel();
+    createButtons();
+};
